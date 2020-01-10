@@ -1,0 +1,30 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/autocomplete",
+        "queryParameters": {
+          "request": {
+            "matches": "^(.*)"
+          },
+          "limit": {
+            "contains": "10"
+          }
+        },
+        "headers": {
+          "Auth-Token": {
+            "matches": "blah"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": { "some": "stuff" }
+      }
+    }
+  ]
+}

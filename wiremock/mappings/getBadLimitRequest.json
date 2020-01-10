@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/testapi/test",
+    "queryParameters": {
+      "stuff": {
+        "matches": "^(.*)"
+      },
+      "limit": {
+        "contains": 100
+      }
+    },
+    "headers": {
+      "Auth-Token": {
+        "matches": "blah"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {"text":"text"}}
+}
