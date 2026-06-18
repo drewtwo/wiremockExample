@@ -1,3 +1,8 @@
+// ✓ CORRECT FORMAT: This file uses the proper format for individual mapping files.
+// It contains a direct mapping object WITHOUT the "mappings" array wrapper.
+// This is the correct way to define mappings in individual JSON files within the mappings directory.
+// This mapping will work correctly with WireMock.
+// See readme.md for more details on the format inconsistency.
 {
   "request": {
     "method": "GET",
