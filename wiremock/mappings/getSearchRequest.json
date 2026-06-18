@@ -1,3 +1,8 @@
+// ⚠️ BUG DEMONSTRATION: This file uses the INCORRECT format
+// It wraps the mapping in a "mappings" array, which is NOT the correct format for individual mapping files.
+// The "mappings" array wrapper should only be used in the main WireMock configuration, not in individual mapping files.
+// This mapping will NOT work as expected with WireMock.
+// See readme.md for more details on the correct format.
 {
   "mappings": [
     {
