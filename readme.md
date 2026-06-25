@@ -44,5 +44,3 @@ When using WireMock's file-based stub mapping feature, each JSON file in the `ma
 1. Start WireMock with the standalone JAR
 2. Attempt to use the getSearchRequest.json mapping - it will fail to load correctly
 3. Use the getBadLimitRequest.json mapping - it will work as expected
-
-This demonstrates the need for clearer documentation and potentially better error handling in WireMock to catch this common mistake.
