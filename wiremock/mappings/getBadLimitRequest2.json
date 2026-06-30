@@ -1,0 +1,27 @@
+// AGENTS_MD_TEST_SUCCESS
+{
+  "request": {
+    "method": "POST",
+    "url": "/testapi/test",
+    "queryParameters": {
+      "stuff": {
+        "matches": "^(.*)"
+      },
+      "limit": {
+        "contains": "100"
+      }
+    },
+    "headers": {
+      "Auth-Token": {
+        "matches": "blah"
+      }
+    }
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": "{\"id\":12}"
+  }
+}
